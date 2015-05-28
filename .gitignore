@@ -1,0 +1,10 @@
+# Robot framework report file.
+log.html
+output.xml
+report.html
+
+# Virtualenv
+local
+
+# Vagrant
+.vagrant
