@@ -9,22 +9,22 @@ Install Go API Service On UAT
     Login   vagrant   vagrant
     Binary File Should Copy To Folder /home/vagrant/api
     Configuration File Should Copy To Folder /home/vagrant/api/conf.d
-    Configuration File Should Set Port To    9001
+    Configuration File Should Set Port To    9005
 
 Install Go API Service On Production
-    Open Connection   192.168.33.11
+    Open Connection   192.168.33.10
     Login   vagrant   vagrant
     Binary File Should Copy To Folder /home/vagrant/api
     Configuration File Should Copy To Folder /home/vagrant/api/conf.d
-    Configuration File Should Set Port To    9000
+    Configuration File Should Set Port To    9006
 
 
 *** Keywords ***
 Binary File Should Copy To Folder /home/vagrant/api
-    File Should Be Exist  /home/vagrant/api/alpaga
+    File Should Be Exist  /home/vagrant/api/alpaca
 
 Configuration File Should Copy To Folder /home/vagrant/api/conf.d
-    File Should Be Exist  /home/vagrant/api/conf.d/alpaga.json
+    File Should Be Exist  /home/vagrant/api/conf.d/alpaca.json
 
 File Should Be Exist
     [Arguments]   ${file}

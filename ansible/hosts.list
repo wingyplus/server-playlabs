@@ -1,0 +1,7 @@
+[all]
+192.168.33.10 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
+192.168.33.11 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
+[uat]
+192.168.33.11 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant ALPACA_PORT=9005
+[production]
+192.168.33.10 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant ALPACA_PORT=9006

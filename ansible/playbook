@@ -1,0 +1,12 @@
+---
+- hosts: uat:production
+  vars:
+  - api_home: /home/vagrant/api/
+  remote_user : vagrant
+  tasks:
+  - name: Copy binary
+    copy: src=../build/alpaca dest={{ api_home }} mode=0755
+  - name: Create configuration directory
+    file: path={{ api_home }}/conf.d/ state=directory mode=0755
+  - name: Configuration alpaca port
+    template: src=../build/conf.d/alpaca.json.j2 dest={{ api_home }}/conf.d/alpaca.json backup=yes
