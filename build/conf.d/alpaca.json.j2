@@ -1,3 +1,9 @@
 {
-  "port": {{ ALPACA_PORT }}
+{% if env  == 'uat' %}
+  "port": 9001
+{% elif env == 'production' %}
+  "port": 9000
+{% else %}
+  "port": 9009
+{% endif %}
 }
