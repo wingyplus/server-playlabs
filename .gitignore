@@ -8,3 +8,4 @@ local
 
 # Vagrant
 .vagrant
+*.swp

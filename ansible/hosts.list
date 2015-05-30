@@ -1,0 +1,4 @@
+[uat]
+192.168.33.11 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant ALPACA_PORT=9005 env=uat
+[production]
+192.168.33.10 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant ALPACA_PORT=9006 env=production
